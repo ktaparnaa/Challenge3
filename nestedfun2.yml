@@ -4,9 +4,10 @@ def iterdict(d):
      if isinstance(v, dict):
          iterdict(v)
      else:      
-         key = input("What key would you like to find?\n")
+         key = input("Enter key to get value?\n")
          if key == k :
             print (k,":",v)
          else :
              print ("nothing")
+             
 iterdict(D1)
