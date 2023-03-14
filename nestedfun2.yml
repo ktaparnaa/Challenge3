@@ -1,10 +1,12 @@
-D1={1: {2: {3: 4, 5: 6}, 3: {4: 5, 6: 7}}, 2: {3: {4: 5}, 4: {6: 7}}}
+D1= {'a': {'b': {'c': 'd'}}}
 def iterdict(d):
   for k,v in d.items():        
      if isinstance(v, dict):
          iterdict(v)
-         print (k,":",v)
-     else:            
-         print (k,":",v)
-
+     else:      
+         key = input("What key would you like to find?\n")
+         if key == k :
+            print (k,":",v)
+         else :
+             print ("nothing")
 iterdict(D1)
