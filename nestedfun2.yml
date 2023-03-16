@@ -8,6 +8,6 @@ def iterdict(d):
          if key == k :
             print (k,":",v)
          else :
-             print ("nothing")
+             print ("No Value Found for the key")
              
 iterdict(D1)
